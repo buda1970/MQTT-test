@@ -1,0 +1,3 @@
+mosquitto_pub -h 192.168.1.144 -t "sensores/ temperatura" -m "1266193804 32"
+mosquitto_pub -h 192.168.1.144 -u test -P test -t  "sensores/ temperatura" -m "1266193804 32"   //user:test pass:test
+mosquitto_pub -h 192.168.1.144 -u test -P test -i "PL" -c -q 1 -t "sensores/ temperatura" -m "1266193804 32"  //para que el brocker guarde la info
